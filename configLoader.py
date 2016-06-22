@@ -65,7 +65,7 @@ class ConfigLoader:
         return logger
 
     def config_ftp(self):
-        self.logger.info("Configuring the FTP Connection: %s" + self.config.get("FTP", "Host"))
+        self.logger.info("Configuring the FTP Connection: %s",self.config.get("FTP", "Host"))
         self.ftp_conn.config(self.logger, self.config.get("FTP", "User"),
                              self.config.get("FTP", "Password"), self.config.get("FTP", "Host"),
                              self.config.getint("FTP", "Port"),
@@ -73,7 +73,7 @@ class ConfigLoader:
                              self.config.get("FTP", "LocalPath"))
 
     def config_mqtt(self):
-        self.logger.info("Configuring the MQTT Broker " + self.config.get("MQTT", "Host"))
+        self.logger.info("Configuring the MQTT Broker: %s ", self.config.get("MQTT", "Host"))
         self.mqtt_conn.config(self.logger, self.config.get("MQTT", "User"),
                               self.config.get("MQTT", "Password"), self.config.get("MQTT", "Host"),
                               self.config.getint("MQTT", "Port"),
