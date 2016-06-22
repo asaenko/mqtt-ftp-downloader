@@ -20,5 +20,9 @@ If it has been installed as a systemd service (see config/install.sh for more in
 
 `sudo systemctl start ftpDownloader`
 
+Dependencies
+============
+This script depends on the [paho library for MQTT](https://pypi.python.org/pypi/paho-mqtt/1.2), which must be installed.
+
 # Support
 I won't be able to give you premium support here. So you should be able to understand the code when something unexpected happens. I also won't take any responsibility if something messes up your system.
