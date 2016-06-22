@@ -4,3 +4,5 @@
 
 # Private data
 ftpDownloader.ini
+__pycache__/
+ftpDownloader.log
