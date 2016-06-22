@@ -8,7 +8,7 @@ My server checks every 30seconds whether there was a motion by calling the REST 
 
 Configuration
 =============
-The configuration is pretty self-explaining. Just have a look at the ftpdownloader_demo.ini file. Just edit that file and rename it to whatever you want.
+The configuration is pretty self-explaining. Just have a look at the ftpdownloader_demo.ini file. Just edit that file and rename it to ftpDownloader.ini.
 
 Usage
 =====

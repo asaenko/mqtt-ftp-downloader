@@ -1,0 +1,14 @@
+[Unit]
+Description=MQTT FTP Downloader
+After=network.target
+Before=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/opt/ftpDownloader/ftpDownloader.py /opt/ftpDownloader/ftpDownloader.ini
+RemainAfterExit=yes
+# Change this to your user
+User=pi
+
+[Install]
+WantedBy=multi-user.target
